@@ -1,0 +1,33 @@
+{
+  "name": "flowbite-express",
+  "version": "1.0.0",
+  "description": "Flowbite on Express",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "start:dev": "nodemon app.js",
+    "tailwind:css": "npx tailwindcss -i ./public/styles/tailwind.css -o ./public/styles/style.css --watch",
+    "start:tailwind": "concurrently \"npm run tailwind:css\" \"npm run start:dev\""
+  },
+  "keywords": [],
+  "repository": "https://github.com/shinokada/flowbite-express",
+  "author": "Shinichi Okada",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.2",
+    "flowbite": "^1.6.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.13",
+    "concurrently": "^7.6.0",
+    "dotenv": "^16.0.3",
+    "nodemon": "^2.0.20",
+    "postcss": "^8.4.21",
+    "postcss-cli": "^10.1.0",
+    "tailwindcss": "^3.2.4"
+  }
+}
