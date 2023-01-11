@@ -13,5 +13,7 @@ pnpm install
 yarn
 ```
 
-Visit http://localhost:3000/alerts
-Visit http://localhost:3000/accordion
+Visit:
+ 
+- http://localhost:3000/alerts
+- http://localhost:3000/accordion
