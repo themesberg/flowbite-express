@@ -1,6 +1,6 @@
 import express from 'express'
 import path from 'path'
-import { fileURLToPath } from 'url';
+import { fileURLToPath } from 'url'
 
 const app = express()
 const PORT = process.env.PORT || 3000;
@@ -35,10 +35,11 @@ app.get('/avatar', (req, res) => {
   res.render('avatar', { title: title })
 })
 
-app.get('/modal', (req, res) => {
-  const title = 'Flowbite-Express: Modal'
-  res.render('modal', { title: title })
+app.get('/breadcrumb', (req, res) => {
+  const title = 'Flowbite-Express: Breadcrumb'
+  res.render('breadcrumb', { title: title })
 })
+
 
 app.get('/badge', (req, res) => {
   const title = 'Flowbite-Express: Badge'
@@ -50,9 +51,39 @@ app.get('/buttons', (req, res) => {
   res.render('buttons', { title: title })
 })
 
+app.get('/card', (req, res) => {
+  const title = 'Flowbite-Express: Card'
+  res.render('card', { title: title })
+})
+
 app.get('/drawer', (req, res) => {
   const title = 'Flowbite-Express: Drawer'
   res.render('drawer', { title: title })
+})
+
+app.get('/dropdown', (req, res) => {
+  const title = 'Flowbite-Express: Dropdown'
+  res.render('dropdown', { title: title })
+})
+
+app.get('/footer', (req, res) => {
+  const title = 'Flowbite-Express: Footer'
+  res.render('footer', { title: title })
+})
+
+app.get('/modal', (req, res) => {
+  const title = 'Flowbite-Express: Modal'
+  res.render('modal', { title: title })
+})
+
+app.get('/navbar', (req, res) => {
+  const title = 'Flowbite-Express: Navbar'
+  res.render('navbar', { title: title })
+})
+
+app.get('/sidebar', (req, res) => {
+  const title = 'Flowbite-Express: Sidebar'
+  res.render('sidebar', { title: title })
 })
 
 app.listen(PORT, () => {
