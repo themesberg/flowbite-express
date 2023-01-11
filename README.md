@@ -1,5 +1,15 @@
 # Flowbite-Express starter
 
+## Features
+
+- Express
+- ES modules
+- Tailwind CSS
+- Flowbite
+- EJS/PUG/HBS
+
+## Installation
+
 ```bash
 git clone git@github.com:shinokada/flowbite-express.git my-app
 cd my-app
@@ -13,6 +23,13 @@ pnpm install
 yarn
 ```
 
+## Starting server
+
+
+```bash
+npm run start:tailwind
+```
+
 Visit:
 
 - http://localhost:3000/alerts
@@ -23,6 +40,8 @@ Visit:
 [Demo](https://flowbite-express.onrender.com/)
 
 ## How to install Flowbite to ExpressJS project
+
+If you want to install Flowbite manually follow this instruction.
 
 ```bash
 # npm/bun/pnpm/yarn
