@@ -30,6 +30,11 @@ app.get('/accordion', (req, res) => {
   res.render('accordion', { title: title })
 })
 
+app.get('/avatar', (req, res) => {
+  const title = 'Flowbite-Express: Avatar'
+  res.render('avatar', { title: title })
+})
+
 app.get('/modal', (req, res) => {
   const title = 'Flowbite-Express: Modal'
   res.render('modal', { title: title })
