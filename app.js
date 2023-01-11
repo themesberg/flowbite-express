@@ -30,6 +30,25 @@ app.get('/accordion', (req, res) => {
   res.render('accordion', { title: title })
 })
 
+app.get('/modal', (req, res) => {
+  const title = 'Flowbite-Express: Modal'
+  res.render('modal', { title: title })
+})
+
+app.get('/badge', (req, res) => {
+  const title = 'Flowbite-Express: Badge'
+  res.render('badge', { title: title })
+})
+
+app.get('/buttons', (req, res) => {
+  const title = 'Flowbite-Express: Buttons'
+  res.render('buttons', { title: title })
+})
+
+app.get('/drawer', (req, res) => {
+  const title = 'Flowbite-Express: Drawer'
+  res.render('drawer', { title: title })
+})
 
 app.listen(PORT, () => {
   console.log(`Example app listening on port ${PORT}`)
