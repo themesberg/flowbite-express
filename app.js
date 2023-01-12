@@ -86,6 +86,10 @@ app.get('/sidebar', (req, res) => {
   res.render('sidebar', { title: title })
 })
 
+app.get('/check', (req, res) => {
+  res.send('All good')
+})
+
 app.listen(PORT, () => {
   console.log(`Example app listening on port ${PORT}`)
 })
