@@ -32,12 +32,12 @@ npm run start:tailwind
 
 Visit:
 
-- http://localhost:3000/alerts
+- http://localhost:3000
 - http://localhost:3000/accordion
 
 ## Demo
 
-[Demo](https://flowbite-express.onrender.com/)
+[Demo](https://stackblitz.com/edit/flowbite-express)
 
 ## How to install Flowbite to ExpressJS project
 
@@ -136,7 +136,7 @@ app.listen(PORT, () => {
 
 Create `src/view/partials/header.ejs` and add the following:
 
-```js
+```html
 <!doctype html>
 <html>
 
@@ -171,7 +171,7 @@ Create `src/view/partials/header.ejs` and add the following:
 
 Create `src/views/footer.ejs` and add the following:
 
-```js
+```html
 <script>
   var themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
   var themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
@@ -224,7 +224,7 @@ Create `src/views/footer.ejs` and add the following:
 
 Create `src/views/index.ejs` and add the following:
 
-```js
+```html
 <%- include('partials/header',{title:title}); %>
 <h1 class="text-4xl font-bold dark:text-white py-8">
   Flowbite-ExpressJS Starter
